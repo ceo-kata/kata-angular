@@ -2,6 +2,9 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+const cors = require('cors');
+app.use(cors());
+
 let router = require('./router');
 let userController = require('./api/userController');
 
